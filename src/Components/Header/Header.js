@@ -18,55 +18,159 @@ const Header = () => {
       <div>
         
      
-      <div id="preloader">
-         <img className="preloader" src="asset/images/loaders/heart-loading2.gif" alt=""/>
+    <div class="page-wrapper">
+
+<div class="header-top">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="top-left text-center text-md-left">
+          <h6>Opening Hours : Saturday to Tuesday - 8am to 10pm</h6>
+        </div>
       </div>
-     
-      <header>
-         <div className="header-top wow fadeIn">
-            <div className="container">
-            <img src={logo} alt=""/>
-            Parkview Hospital Ltd.
-               <div className="right-header">
-                  <div className="header-info">
-                     <div className="info-inner">
-                        <span className="icontop"><img src="asset/images/phone-icon.png" alt="#"/></span>
-                        <span className="iconcont"><a href="tel:800 123 456">800 123 456</a></span>	
-                     </div>
-                     <div className="info-inner">
-                        <span className="icontop"><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                        <span className="iconcont"><a data-scroll href="mailto:info@yoursite.com">info@Lifecare.com</a></span>	
-                     </div>
-                     <div className="info-inner">
-                        <span className="icontop"><i className="fa fa-clock-o" aria-hidden="true"></i></span>
-                        <span className="iconcont"><a data-scroll href="#">Daily: 7:00am - 8:00pm</a></span>	
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div className="header-bottom wow fadeIn">
-            <div className="container">
-          
+      <div class="col-md-6">
+        <div class="top-right text-center text-md-right">
+          <ul class="social-links">
+            <li>
+              <a href="" aria-label="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="google-plus">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" aria-label="pinterest">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="header-uper">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-4 col-lg-3">
+        <div class="logo">
+          <a href="index.html">
+            <img loading="lazy" class="img-fluid" src={logo} alt="logo"/>
+          </a>
+         <p> Parkview Hospital Ltd</p>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-9">
+        <div class="right-side">
+          <ul class="contact-info pl-0 mb-4 mb-md-0">
+            <li class="item text-left">
+              <div class="icon-box">
+                <i class="far fa-envelope"></i>
+              </div>
+              <strong>Email</strong>
+              <br/>
+              <a href="mailto:info@medic.com">
+                <span>info@parkviewhospital.com</span>
+              </a>
+            </li>
+            <li class="item text-left">
+              <div class="icon-box">
+                <i class="fas fa-phone"></i>
+              </div>
+              <strong>Call Now</strong>
+              <br/>
+              <span>+ ((880) 1723-123567</span>
+            </li>
+          </ul>
+          <div class="link-btn text-center text-lg-right">
+            <a href="contact.html" class="btn-style-one">Appoinment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <Link class="nav-link" to="/home">Home</Link>
+        </li>
+        <li class="nav-item ">
+          <Link class="nav-link" to="/about">About</Link>
+        </li>
+        {/* <li class="nav-item ">
+        <Link class="nav-link" href="/contact">Contact</Link>
+        </li> */}
+        <li class="nav-item ">
+        <Link class="nav-link" to="">Service</Link>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="team.html">Team</a>
+        </li>
+        <li class="nav-item @@appointment">
+          <a class="nav-link" href="appointment.html">Appointment</a>
+        </li>
+        <li class="nav-item dropdown @@blogs">
+          <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item @@blogDetails" href="blog-details.html">Blog Details</a></li>
+            <li class="dropdown dropdown-submenu dropright">
+              <a class="dropdown-item dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
     
-               <div className="serch-bar">
-                  <div id="custom-search-input">
-                     <div className="input-group col-md-12">
-                        <input type="text" className="form-control input-lg" placeholder="Search" />
-                        <span className="input-group-btn">
-                        <button className="btn btn-info btn-lg" type="button">
-                        <i className="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                        </span>
-                     </div>
-                  </div>
-               </div>
-               
-               </Navbar>
-            </div>
-         </div>
-      </header>
-    
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
+                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item ">
+        <Link class="nav-link" to="/contact">Contact</Link>
+        </li>
+        <li class="nav-item d-flex ">
+        <Link class="nav-link py-4" to="/Register">Register</Link>
+        </li>
+        <li class="nav-item ">
+        <Link class="nav-link py-4" to="/login">login</Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+</div>
+
 
       </div>
   
