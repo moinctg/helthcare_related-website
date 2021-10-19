@@ -38,10 +38,10 @@ const Footer = () => {
               </li>
             </ul>
             <ul className="list-inline social-icons">
-              <li className="list-inline-item"><a href="https://facebook.com/themefisher" aria-label="facebook"><i className="fab fa-facebook-f"></i></a></li>
-              <li className="list-inline-item"><a href="https://twitter.com/themefisher" aria-label="twitter"><i className="fab fa-twitter"></i></a></li>
-              <li className="list-inline-item"><a href="https://instagram.com/themefisher" aria-label="instagram"><i className="fab fa-instagram"></i></a></li>
-              <li className="list-inline-item"><a href="https://github.com/themefisher" aria-label="github"><i className="fab fa-github"></i></a></li>
+              <li className="list-inline-item"><a href="" aria-label="facebook"><i className="fab fa-facebook-f"></i></a></li>
+              <li className="list-inline-item"><a href="" aria-label="twitter"><i className="fab fa-twitter"></i></a></li>
+              <li className="list-inline-item"><a href="" aria-label="instagram"><i className="fab fa-instagram"></i></a></li>
+              <li className="list-inline-item"><a href="" aria-label="github"><i className="fab fa-github"></i></a></li>
             </ul>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Footer = () => {
   <div className="footer-bottom">
     <div className="container clearfix">
       <div className="copyright-text">
-        <p>&copy; Copyright 2021. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></p>
+        <p>&copy; Copyright 2021. Designed &amp; Developed by <a href="https://moinctg.github.io/My-Personal-Portfolio-Web/">Moinuddin Kamal</a></p>
       </div>
       <ul className="footer-bottom-link">
         <li>
