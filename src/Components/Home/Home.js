@@ -6,10 +6,17 @@ import {Carousel} from 'react-bootstrap';
 import slideImage1 from '../../img/slider/slider-bg-1.jfif';
 import slideImage2 from '../../img/slider/slider-bg-2.jfif';
 import slideImage3 from '../../img/slider/slider-bg-3.jpg';
+import useDataLoad from '../../hooks/useDataLoad';
 
 
 
 const Home = () => {
+   const {service} = useDataLoad();
+   
+   console.log(service);
+   
+   service.map(service1=>console.log(service1));
+
     const {user} = useAuth();
     return (
         <div>
@@ -144,6 +151,12 @@ const Home = () => {
     </div>
   </div>
 </section>
+
+<div>
+ <h3>Name:{ name }</h3>
+<h3>Description:{ description }</h3>
+<img src={ img } alt="" /> 
+</div>
         </div>
     );
 };

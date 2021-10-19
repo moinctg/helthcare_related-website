@@ -14,6 +14,7 @@ import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
+import Service from './Components/Service/Service';
 
 
 
@@ -38,7 +39,9 @@ function App() {
             </Route>
             <Route  path="/contact">
             <Contact></Contact>
-
+            </Route>
+            <Route  path="/service">
+            <Service></Service>
             </Route>
 
             <Route exact path="*">

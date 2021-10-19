@@ -126,7 +126,7 @@ const Header = () => {
         <Link class="nav-link" href="/contact">Contact</Link>
         </li> */}
         <li class="nav-item ">
-        <Link class="nav-link" to="">Service</Link>
+        <Link class="nav-link" to="/service">Service</Link>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="team.html">Team</a>
