@@ -128,9 +128,7 @@ const Header = () => {
         <li class="nav-item ">
         <Link class="nav-link" to="/service">Service</Link>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="team.html">Team</a>
-        </li>
+       
         <li class="nav-item ">
         <Link class="nav-link" to="/appoinment">Appoinment</Link>
         </li>
@@ -146,9 +144,11 @@ const Header = () => {
         </li>
         
                   <p className="text-white"> {user.displayName}</p>
-                    <li class="nav-item ">
-                 { user?.email  &&  <button  onClick={logOut }> Logout</button> } 
-                    </li>
+                   
+                    { 
+              user?.email || user?.displayName  &&  <button  onClick = {logOut }> Logout</button> 
+              
+                  } 
         
        
       </ul>

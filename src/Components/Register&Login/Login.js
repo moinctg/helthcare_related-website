@@ -42,11 +42,15 @@ const Login = () => {
          <img className="p-5" src={loginImag} alt=""/>
         </div>
       </div>
-      <p className="text-primary" text-center>------OR-------</p>
-      <br/>
+      
+    
+      <div className="p-4">
+         <h3 className="text-primary"> Or Please Login</h3>
+
       <Button variant="secondary" onClick={ signInUsingGoogle } type="submit">Sign in Google</Button>
    
-      <Button variant="dark" onClick={signInUsingGithub} type="submit">Sign in Github</Button>
+   <Button variant="dark" onClick={signInUsingGithub} type="submit">Sign in Github</Button>
+      </div>
      
         </div>
     );

@@ -3,16 +3,22 @@ import useAuth from '../../hooks/useAuth';
 
 import {Carousel} from 'react-bootstrap';
 
-import slideImage1 from '../../img/slider/slider-bg-1.jfif';
-import slideImage2 from '../../img/slider/slider-bg-2.jfif';
-import slideImage3 from '../../img/slider/slider-bg-3.jpg';
+import slideImage1 from '../../img/slider/1.jpg';
+import slideImage2 from '../../img/slider/2.jpg';
+import slideImage3 from '../../img/slider/3.jpg';
+
+import r1 from '../../img/resource/1.png';
+import r2 from '../../img/resource/2.png';
+import r3 from '../../img/resource/3.png';
+import r4 from '../../img/resource/4.png';
+
 import useDataLoad from '../../hooks/useDataLoad';
 
 
 
-const Home = () => {
-   const {service,setService} = useDataLoad();
-   const serviceItems = service.slice(0,6);
+const Home = (props) => {
+   
+  console.log (props.service);
    
   //  console.log(service);
    
@@ -90,7 +96,7 @@ const Home = () => {
     <Carousel.Caption>
       <h2>Find Doctor</h2>
       <h4>Best Doctor's In Chittagong</h4>
-      <p>We have best doctor's in chittagong.out doctors are more professonals for providing best treatment </p>
+      <p  className="text-white">We have best doctor's in chittagong.out doctors are more professonals for providing best treatment </p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -103,7 +109,7 @@ const Home = () => {
     <Carousel.Caption>
     <h2> Specilized Unit</h2>
       <h4>your healthy is out best priroty </h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p  className="text-white">We have best doctor's in chittagong.out doctors are more professonals for providing best treatmen</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -114,13 +120,12 @@ const Home = () => {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    <h2> Best  Service</h2>
+      <h4>your healthy is out best priroty </h4>
+      <p className="text-white">We have best doctor's in chittagong.out doctors are more professonals for providing best treatmen.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-
-
 
 
 
@@ -155,10 +160,302 @@ const Home = () => {
 
 <div>
 
-{
 
 
-}
+
+<section class="feature-section section bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="image-content">
+					<div class="section-title text-center">
+						<h3>Best Features <span>of Our Hospital</span></h3>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni in at debitis <br/> nam error officia vero tempora alias? Sunt?</p>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="services.html"><img loading="lazy" src={r1} alt="features image"/></a>
+									</figure>
+								</div>
+								<h3 class="mb-2">Orthopedics</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+									ex sunt, est aspernatur
+									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="services.html">
+											<img loading="lazy" src={r2} alt="features image"/>
+										</a>
+									</figure>
+								</div>
+								<h3 class="mb-2">Diaginostic</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+									ex sunt, est aspernatur
+									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="services.html">
+											<img loading="lazy" src={r3} alt="features image"/>
+										</a>
+									</figure>
+								</div>
+								<h3 class="mb-2">Psycology</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+									ex sunt, est aspernatur
+									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="services.html">
+											<img loading="lazy" src={r4} alt="features image"/>
+										</a>
+									</figure>
+								</div>
+								<h3 class="mb-2">General Treatment</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+									ex sunt, est aspernatur
+									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service-tab-section section">
+  <div class="outer-box clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+         
+          <div class="tabs mb-5">
+            <ul class="nav nav-tabs justify-content-center" id="aboutTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="dormitory-tab" data-toggle="tab" href="#dormitory" role="tab" aria-controls="dormitory" aria-selected="true">dormitory</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="orthopedic-tab" data-toggle="tab" href="#orthopedic" role="tab" aria-controls="orthopedic" aria-selected="false">orthopedic</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="sonogram-tab" data-toggle="tab" href="#sonogram" role="tab" aria-controls="sonogram" aria-selected="false">sonogram</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="x-ray-tab" data-toggle="tab" href="#x-ray" role="tab" aria-controls="x-ray" aria-selected="false">x-ray</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="diagnostic-tab" data-toggle="tab" href="#diagnostic" role="tab" aria-controls="diagnostic" aria-selected="false">diagnostic</a>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="tab-content" id="aboutTab">
+            <div class="service-box tab-pane fade show active" id="dormitory">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img loading="lazy" class="img-fluid" src= "https://i.ibb.co/WHfBTbQ/Dormitory.jpg " alt="service-image"/>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contents">
+                    <div class="section-title">
+                      <h3>dormitory</h3>
+                    </div>
+                    <div class="text">
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added. then a
+                        dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added. then a dental
+                        prosthetic is added.then a dental pros- thetic is added.</p>
+                    </div>
+                    <ul class="content-list">
+                      <li>
+                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
+                      </li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="service-box tab-pane fade" id="orthopedic">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img loading="lazy" class="img-fluid" src="https://i.ibb.co/nPsFXzw/orthopedic.jpg" alt="service-image"/>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contents">
+                    <div class="section-title">
+                      <h3>orthopedic</h3>
+                    </div>
+                    <div class="text">
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                    </div>
+                    <ul class="content-list">
+                      <li>
+                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
+                      </li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="service-box tab-pane fade" id="sonogram">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img loading="lazy" class="img-fluid" src="https://i.ibb.co/MkCmc8q/laproscopic-surgery-ctg.jpg" alt="service-image"/>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contents">
+                    <div class="section-title">
+                      <h3>sonogram</h3>
+                    </div>
+                    <div class="text">
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                    </div>
+                    <ul class="content-list">
+                      <li>
+                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
+                      </li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="service-box tab-pane fade" id="x-ray">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img loading="lazy" class="img-fluid" src="https://i.ibb.co/fGDMsvs/NICU-parkview-hospital.jpg" alt="service-image"/>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contents">
+                    <div class="section-title">
+                      <h3>x-ray</h3>
+                    </div>
+                    <div class="text">
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                    </div>
+                    <ul class="content-list">
+                      <li>
+                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
+                      </li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="service-box tab-pane fade" id="diagnostic">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img loading="lazy" class="img-fluid" src="https://i.ibb.co/nPsFXzw/orthopedic.jpg" alt="service-image"/>
+                </div>
+                <div class="col-lg-6">
+                  <div class="contents">
+                    <div class="section-title">
+                      <h3>diagnostic</h3>
+                    </div>
+                    <div class="text">
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
+                        then a dental prosthetic is added.
+                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                    </div>
+                    <ul class="content-list">
+                      <li>
+                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
+                      </li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                      <li>
+                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                        involves</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
  
  </div>
         </div>

@@ -35,7 +35,10 @@ Based on this ideology, Parkview Hospital Limited was incorporated to provide an
                 ></ServiceList>)
             }
 
-            
+            {service.map(service=> <Home service={service}>
+
+            </Home>)
+            }
 
 
         </div>
