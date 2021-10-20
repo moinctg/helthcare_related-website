@@ -8,9 +8,9 @@ const useDataLoad = () => {
 
     useEffect(()=> {
 
-        fetch('https://github.com/moinctg/react-simple-ecommerce-app/blob/main/club.json')
+        fetch('./Service.json')
         .then(res=>res.json())
-        .then(data=>console.log(data))
+        .then(data=>setService(data))
 
 
     }
@@ -19,7 +19,7 @@ const useDataLoad = () => {
        
     
     return (
-        {service,}
+        {service,setService}
 
        
     )

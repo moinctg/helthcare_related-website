@@ -12,7 +12,7 @@ import {
 
 const Header = () => {
   const {user,logOut} = useAuth();
-  console.log(user.displayName);
+ 
     return (
 
       <div>
@@ -131,34 +131,26 @@ const Header = () => {
         <li class="nav-item ">
           <a class="nav-link" href="team.html">Team</a>
         </li>
-        <li class="nav-item @@appointment">
-          <a class="nav-link" href="appointment.html">Appointment</a>
+        <li class="nav-item ">
+        <Link class="nav-link" to="/appoinment">Appoinment</Link>
         </li>
-        <li class="nav-item dropdown @@blogs">
-          <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
-
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item @@blogDetails" href="blog-details.html">Blog Details</a></li>
-            <li class="dropdown dropdown-submenu dropright">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-    
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+       
         <li class="nav-item ">
         <Link class="nav-link" to="/contact">Contact</Link>
         </li>
         <li class="nav-item d-flex ">
-        <Link class="nav-link py-4" to="/Register">Register</Link>
+        <Link class="nav-link py-4" to="/register">Register</Link>
         </li>
         <li class="nav-item ">
         <Link class="nav-link py-4" to="/login">login</Link>
         </li>
+        
+                  <p className="text-white"> {user.displayName}</p>
+                    <li class="nav-item ">
+                 { user?.email  &&  <button  onClick={logOut }> Logout</button> } 
+                    </li>
+        
+       
       </ul>
     </div>
   </div>

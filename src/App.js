@@ -15,6 +15,10 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
 import Service from './Components/Service/Service';
+import Register from './Components/Register&Login/Register';
+import Login from './Components/Register&Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Appoinment from './Components/Appoinment/Appoinment';
 
 
 
@@ -40,8 +44,17 @@ function App() {
             <Route  path="/contact">
             <Contact></Contact>
             </Route>
-            <Route  path="/service">
+            <PrivateRoute path="/service">
             <Service></Service>
+            </PrivateRoute>
+            <PrivateRoute path="/appoinment">
+            <Appoinment></Appoinment>
+            </PrivateRoute>
+            <Route  path="/register">
+            <Register></Register>
+            </Route>
+            <Route  path="/login">
+            <Login></Login>
             </Route>
 
             <Route exact path="*">

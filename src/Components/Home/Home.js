@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import useAuth from '../../hooks/useAuth';
 
 import {Carousel} from 'react-bootstrap';
@@ -11,11 +11,12 @@ import useDataLoad from '../../hooks/useDataLoad';
 
 
 const Home = () => {
-   const {service} = useDataLoad();
+   const {service,setService} = useDataLoad();
+   const serviceItems = service.slice(0,6);
    
-   console.log(service);
+  //  console.log(service);
    
-   service.map(service1=>console.log(service1));
+   
 
     const {user} = useAuth();
     return (
@@ -153,10 +154,13 @@ const Home = () => {
 </section>
 
 <div>
- <h3>Name:{ name }</h3>
-<h3>Description:{ description }</h3>
-<img src={ img } alt="" /> 
-</div>
+
+{
+
+
+}
+ 
+ </div>
         </div>
     );
 };
